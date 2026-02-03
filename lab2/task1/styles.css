@@ -1,0 +1,194 @@
+* {
+    font-family:Helvetica;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color:  rgb(241, 243, 245);
+    color:black;
+    min-height: 105vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+hr{
+    border: none;
+    border-top: 1px solid rgb(222, 221, 222);
+    padding-top: 6.5px;
+    padding-bottom: 6.5px;
+    margin-top: 6.5px;
+    margin-bottom: 6.5px;
+
+    
+}
+.main{
+    display: flex;
+    flex:1;
+    width:60%;
+    max-width: auto;
+    margin:0;
+    justify-content: center;
+    align-items:center;
+    gap:80px;
+}
+.text_1{
+    flex:1;
+    height: 280px;
+}
+.text_1 h1{
+    color:rgb(25, 123, 252);
+    font-size: 59px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.text_1 p{
+    color: rgb(30, 30, 30);
+    font-size: 27px;;
+
+}
+.login_block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.log_account{
+    background: white;
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 3px 9px rgba(0,0,0,0.3);
+}
+.log_account input{
+    padding: 13px;
+    font-size: 16px;
+    border: 1px solid rgb(222, 221, 222);
+    border-radius: 4px;
+    margin-bottom: 13px;
+}
+.log_account input:focus {
+  border-color: #008cff;
+  outline: none;
+}
+.log_account a{
+    color: rgb(25, 120, 242);
+    font-size: 13px;
+    text-decoration: none;
+    text-align: center;
+    margin:12px;
+    padding: 5px;
+}
+.log_account a:hover{
+    text-decoration: underline;
+}
+.log_account hr{
+    border: none;
+    border-top: 1px solid rgb(222, 221, 222);
+    padding-top: 6.5px;
+    padding-bottom: 6.5px;
+    margin-top: 6.5px;
+    margin-bottom: 6.5px;
+}
+.login{
+    background-color: rgb(25, 120, 242);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    width: 100%;
+    cursor: pointer;
+}
+.login:hover{
+    background-color: rgb(41, 127, 240);
+}
+.new_account{
+    background-color: rgb(69, 185, 40);
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    align-self: center;
+    transition: background-color 01s ease;
+    cursor: pointer;
+}
+.new_account:hover{
+    background-color: rgb(53, 136, 35);
+}
+.text_2{
+    color: rgb(30, 30, 30);
+    font-size: 14px;
+    max-width: 380px;
+    text-align: center;
+}
+.text_2 a{
+    color:black;
+    text-decoration: none;
+}
+.text_2 a:hover{
+    text-decoration: underline;
+}
+.footer{
+    background: white;
+    color:rgb(130, 140, 143);
+    font-size: 12px;
+    width: 100%;
+    padding: 20px 0 30px;
+    margin-top: auto;
+}
+.footer a{
+    color: rgb(140, 141, 145);
+    text-decoration: none;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.languages{
+    border-bottom: 1px solid rgb(222, 221, 222);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    padding: 0 20px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    gap: 6px 10px;
+
+}
+.languages span{
+    background: rgb(245, 245, 245);
+    color: rgb(105, 107, 110);
+    font-size: 22px;
+    width: 30px;
+    height: 21px;
+    border: 1px solid rgb(205, 210, 215);
+    border-radius: 2px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.links{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 0 auto;
+    gap: 6px 10px;
+}
+.languages span:hover{
+    background-color: rgb(235, 235, 235);
+}
+.meta{
+    max-width: 1000px;
+    padding: 0 20px;
+    margin: 10px auto 0;
+}
+
+
