@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: white;
+    color: rgb(36, 41, 47);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 56px 24px 80px;
+    text-align: center;
+}
+
+.page_header {
+    margin-bottom: 24px;
+}
+
+.main_title {
+    font-size: 52px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    margin-bottom: 16px;
+}
+
+.main_description {
+    max-width: 860px;
+    margin: 0 auto 24px;
+    color: rgb(87, 96, 106);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.primary_button {
+    display: inline-block;
+    background: linear-gradient(rgb(61, 61, 61), black);
+    color: white;
+    padding: 12px 22px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 44px;
+}
+
+.pricing_plans {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.plan_card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(27, 31, 36, 0.5);
+}
+
+.plan_price {
+    margin-top: 20px;
+    font-family: "Mona Sans";
+    margin-bottom: 10px;
+}
+
+.billing_period {
+    position: relative;
+    top: -0.5em;
+}
+
+.price_amount {
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.plan_price sup {
+    color: rgb(130, 130, 130);
+    font-family: "Mona Sans";
+    font-size: 20px;
+    position: relative;
+    top: -0.9em;
+    padding-right: 4px;
+}
+
+.plan_price sub {
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    top: -0.2em;
+    padding: 0 5px;
+}
+
+.plan_action a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.plan_action {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    width: 100%;
+}
+
+.filled_button {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    background: linear-gradient(rgb(61, 61, 61), black);
+    color: white;
+    margin-bottom: 44px;
+}
+
+.outline_button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 600;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(142, 142, 142);
+    text-decoration: none;
+    margin-bottom: 44px;
+}
+
+details { 
+    border: 0; 
+}
+
+.plan_features {
+    text-align: left;
+    border-top: 1px solid rgb(229, 231, 235);
+    padding-top: 14px;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature_summary {
+    list-style: none;
+    cursor: pointer;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgb(70, 71, 72);
+    padding: 4px 0;
+}
+
+.feature_summary::before {
+    content: "›";
+    transform: translateY(-1px);
+    color: rgb(87, 96, 106);
+    font-size: 18px;
+}
+
+details[open] .feature_summary::before {
+    transform: rotate(90deg);
+}
+
+.feature_details {
+    color: rgb(87, 96, 106);
+    padding: 6px 0 4px 20px;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.addons_section {
+    margin-top: 64px;
+    text-align: center;
+}
+
+.section_title {
+    font-size: 60px;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.addons_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-top: 12px;
+}
+
+.addon_card {
+    background: white;
+    border: 1px solid rgb(208, 215, 222);
+    border-radius: 7px;
+    padding: 30px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(27, 31, 36, 0.08);
+    transition: 0.3s ease;
+}
+
+.addon_card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(27, 31, 36, 0.16);
+}
+.addon_title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.addon_description {
+    color: rgb(87, 96, 106);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.addon_link {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.features_includes {
+    color: rgb(87, 96, 106);
+    font-style: italic;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.plan_description {
+    color: rgb(87, 96, 106);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.featured_card{
+    position: relative;
+    border: 8px solid rgb(9, 105, 218);
+    box-shadow: 0 10px 20px rgba(9, 105, 218, 0.15);
+}
+.featured_card::before{
+    content: "RECOMMENDED";
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgb(9, 105, 218);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 4px 16px;
+    border-radius: 20px;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.add_ons{
+    color: rgb(9, 105, 218);
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 10px;
+}

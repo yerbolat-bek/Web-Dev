@@ -1,24 +1,240 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Pricing page</title>
+    <title>GitHub Pricing</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Try the Copilot-powered platform</h1>
-    <p>We get it, there's a lot you can do with GitHub. That’s why we've packed all of it into a single risk-free trial that includes GitHub Enterprise, Copilot, and Advanced Security.</p>
-    <button type="text">Start free for 30 days</button>
-
-    <div class="free">
-
-    </div>
-    <div class="team">
+    <main>
+        <header class="page_header">
+            <h1 class="main_title">Try the Copilot-powered platform</h1>
+            <p class="main_description">We get it, there's a lot you can do with GitHub. That's why we've packed all of it into a single risk-free trial that includes GitHub Enterprise, Copilot, and Advanced Security.</p>
+            <a class="primary_button" href="#">Start free for 30 days</a>
+        </header>
         
-    </div>
-    <div class="enterprice">
-        
-    </div>
+        <section class="pricing_plans" aria-label="Pricing plans">
+            <div class="plan_card">
+                <h2 class="plan_title">Free</h2>
+                <p class="plan_description">The basics for individuals <br> and organizations</p>
+                <div class="plan_price">
+                    <sup class="currency_symbol">$</sup>
+                    <span class="price_amount">0</span>
+                    <sub class="currency_code">USD</sub>
+                    <span class="billing_period">per user/month</span>
+                </div>
+                <div class="plan_action">
+                    <a class="outline_button" href="#">Create a free organization</a>
+                </div>
+                <div class="plan_features">
+                    <details class="feature_item">
+                        <summary class="feature_summary">Unlimited public/private repositories</summary>
+                        <div class="feature_details">
+                            Host open source projects in public GitHub repositories, accessible via web or command line.
+                            Public repositories are accessible to anyone at GitHub.com.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Dependabot security and version updates</summary>
+                        <div class="feature_details">
+                            Keep projects secure by automatically opening pull requests to update vulnerable dependencies
+                            and keep them up to date.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">2,000 CI/CD minutes/month</summary>
+                        <div class="feature_details">
+                            Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">500MB of Packages storage</summary>
+                        <div class="feature_details">
+                            Host your own software packages or use them as dependencies in other projects. Both private and public hosting available.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Issues & Projects</summary>
+                        <div class="feature_details">
+                            Give your developers flexible features for project management that adapts to any team, project, and workflow — all alongside your code.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Community support</summary>
+                        <div class="feature_details">
+                            Get help with most of your GitHub questions and issues in our Community Forum.
+                        </div>
+                    </details>
 
-    <h1>Additional add-ons</h1>
+                </div>
+            </div>
+            
+            <div class="plan_card">
+                <h2 class="plan_title">Team</h2>
+                <p class="plan_description">Advanced collaboration for<br>individuals and organizations</p>
+                <div class="plan_price">
+                    <sup class="currency_symbol">$</sup>
+                    <span class="price_amount">4</span>
+                    <sub class="currency_code">USD</sub>
+                    <span class="billing_period">per user/month</span>
+                </div>
+                <div class="plan_action">
+                    <a class="filled_button" href="#">Continue with Team</a>
+                </div>
+                <div class="plan_features">
+                    <p class="features_includes">← Everything included in Free, plus...</p>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Access to GitHub Codespaces</summary>
+                        <div class="feature_details">
+                            Blazing fast cloud developer environments with flexible compute and pre-configured containers,
+                            developers can code, collaborate, and debug from any browser. Pay only for what you use with
+                            compute fees starting at $0.18/hr and storage fees at $0.07/GB per month.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Repository rules</summary>
+                        <div class="feature_details">
+                            Enforce restrictions on how code branches and tags are merged across your organization, including requiring reviews by selected collaborators, or allowing only specific contributors to work on a particular branch.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Multiple reviewers in pull requests</summary>
+                        <div class="feature_details">
+                            Assign multiple users or a team to review a pull request.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Draft pull requests</summary>
+                        <div class="feature_details">
+                            Easily discuss and collaborate on pull requests before submitting to formal review.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Code owners</summary>
+                        <div class="feature_details">
+                            Automatically request reviews—or require approval—by selected contributors when changes are made to sections of code that they own.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Required reviewers</summary>
+                        <div class="feature_details">
+                            Ensure that pull requests have a specific number of approving reviews before collaborators can make changes to a protected branch.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Pages and Wikis</summary>
+                        <div class="feature_details">
+                            Host documentation and simple websites for your project in a wiki format that contributors can easily edit either on the web or command line.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Environment deployment branches and secrets</summary>
+                        <div class="feature_details">
+                            A job cannot access secrets that are defined in an environment unless it is running on the specified branch.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">3,000 CI/CD minutes/month</summary>
+                        <div class="feature_details">
+                            Use execution minutes with GitHub Actions to automate your software development workflows. Write tasks and combine them to build, test, and deploy any code project on GitHub.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">2GB of Packages storage</summary>
+                        <div class="feature_details">
+                            Host your own software packages or use them as dependencies in other projects. Both private and public hosting available.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Web-baased support</summary>
+                        <div class="feature_details">
+                            GitHub Support can help you troubleshoot issues you run into while using GitHub.
+                        </div>
+                    </details>
+                    <p class="add_ons">FEATURED ADD-ONS</p>
+                    <details class="feature_item">
+                        <summary class="feature_summary">GitHub Secret Protection</summary>
+                        <div class="feature_details">
+                            Ensure your secrets stay secure. Mitigate risk associated with exposed secrets in your repositories, while preventing new leaks before they happen with push protection.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">GitHub Code Security</summary>
+                        <div class="feature_details">
+                            Find and fix vulnerabilities in your code before they reach production. Prioritize your Dependabot alerts with automated triage rules.
+                        </div>
+                    </details>
+
+                </div>
+            </div>
+            
+            <div class="plan_card featured_card">
+                <h2 class="plan_title">Enterprise</h2>
+                <p class="plan_description">Security, compliance,<br>and flexible deployment</p>
+                <div class="plan_price">
+                    <sup class="currency_symbol">$</sup>
+                    <span class="price_amount">21</span>
+                    <sub class="currency_code">USD</sub>
+                    <span class="billing_period">per user/month</span>
+                </div>
+                <div class="plan_action">
+                    <a class="filled_button" href="#">Start a free trial</a>
+                    <a class="outline_button" href="#">Contact Sales</a>
+                </div>
+                <div class="plan_features">
+                    <p class="features_includes">← Everything included in Team, plus...</p>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Data residency</summary>
+                        <div class="feature_details">
+                            GitHub Enterprise Cloud offers a multi-tenant enterprise SaaS solution on Microsoft Azure,
+                            allowing you to choose a regional cloud deployment for data residency.
+                            Start a free 30 day trial today or contact our sales team for more information.
+                        </div>
+                    </details>
+                    <details class="feature_item">
+                        <summary class="feature_summary">Enterprise Managed Users</summary>
+                        <div class="feature_details">
+                            Own and control the user accounts of your enterprise members through your identity provider (IdP).
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <section class="addons_section">
+            <h2 class="section_title">Additional add-ons</h2>
+            <div class="addons_grid">
+                <div class="addon_card">
+                    <h3 class="addon_title">GitHub Copilot</h3>
+                    <p class="addon_description">Get started for free with up to 2,000 completions and 50 chat requests per month.</p>
+                    <a class="addon_link" href="#">Compare plans ›</a>
+                </div>
+                <div class="addon_card">
+                    <h3 class="addon_title">GitHub Models</h3>
+                    <p class="addon_description">Bring industry-leading AI into your workflow, securely and with full developer control.</p>
+                    <a class="addon_link" href="#">Learn more ›</a>
+                </div>
+                <div class="addon_card">
+                    <h3 class="addon_title">GitHub Advanced Security</h3>
+                    <p class="addon_description">Gain peace of mind with our security, privacy, and responsible AI policies.</p>
+                    <a class="addon_link" href="#">Learn more ›</a>
+                </div>
+                <div class="addon_card">
+                    <h3 class="addon_title">GitHub Codespaces</h3>
+                    <p class="addon_description">Starting at $0.18 per hour of compute and $0.07 per GB of storage.</p>
+                    <a class="addon_link" href="#">Learn more ›</a>
+                </div>
+                <div class="addon_card">
+                    <h3 class="addon_title">Premium support</h3>
+                    <p class="addon_description">Get expert help for Enterprise Cloud and Enterprise—any hour your team needs it.</p>
+                    <a class="addon_link" href="#">Learn more ›</a>
+                </div>
+                <div class="addon_card">
+                    <h3 class="addon_title">Git LFS</h3>
+                    <p class="addon_description">$5 per month for 50 GB bandwidth and 50 GB of storage.</p>
+                    <a class="addon_link" href="#">Learn more ›</a>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
