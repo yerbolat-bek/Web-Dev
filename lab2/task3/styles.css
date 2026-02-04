@@ -122,6 +122,9 @@ body {
     color: white;
     margin-bottom: 44px;
 }
+.filled_button:hover{
+    background: linear-gradient(rgb(87, 87, 87), black);;
+}
 
 .outline_button {
     display: inline-flex;
@@ -135,6 +138,9 @@ body {
     border: 1px solid rgb(142, 142, 142);
     text-decoration: none;
     margin-bottom: 44px;
+}
+.outline_button:hover{
+    border-color: black;
 }
 
 details { 
