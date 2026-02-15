@@ -169,4 +169,16 @@ body{
     padding: 0;
 }
 
+@media(max-width:800px){
+    .logo{
+        position: static;
+        margin:30px auto;
+        display: flex;
+        justify-content: center;
+    }
+    .text_1{
+        display: none;
+    }
+}
+
 
