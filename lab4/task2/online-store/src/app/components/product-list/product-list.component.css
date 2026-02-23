@@ -1,57 +1,6 @@
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.products_grid{
-    display: flex;
-    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-    padding: 16px;
-    gap:16px;
-}
-
-.product_card{
-    text-align: center;
-    border: 1px solid rgb(221, 221, 221);
-    border-radius: 8px;
-    padding: 12px;
-    transition: box-shadow 0.3s;
-}
-
-.product_card:hover{
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-.product_card img{
-    width: 100%;
-    object-fit: cover;
-    border-radius: 6px;
-}
-
-.rating{
-    color: gold;
-    margin: 8px 0;
-}
-
-.share_buttons button{
-    border-style: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.whatsapp_share{
-    background-color: rgb(137, 255, 104);
-    padding: 6px 10px;
-    margin: 4px;
-}
-
-.telegram_share{
-    background-color: rgb(115, 190, 255);
-    padding: 6px 13px;
-    margin: 4px;
-}
-.whatsapp_share:hover{
-    background-color: rgb(94, 206, 63);
-}
-.telegram_share:hover{
-    background-color: rgb(68, 164, 248);
+.products_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  padding: 16px;
 }

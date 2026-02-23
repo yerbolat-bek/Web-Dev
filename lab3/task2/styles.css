@@ -132,5 +132,7 @@ body{
     background-color: rgb(252, 118, 118);
 }
 
-
+.tasks.urg {
+    color: red;
+}
 

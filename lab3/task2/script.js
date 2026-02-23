@@ -10,13 +10,19 @@ getform.addEventListener("submit", function ( event ) {
         return;
     }
 
-    addTask(taskText);
+    const isUrgent = confirm("Is urgent?");
+
+    addTask(taskText, isUrgent);
     input.value = "";
 });
 
-function addTask(text){
+function addTask(text, isUrgent){
     const listTask = document.createElement("li");
     listTask.className = "tasks";
+
+    if(isUrgent){
+        listTask.classList.add("urg");
+    }
 
     const listSection = document.createElement("div");
     listSection.className = "list_section";
@@ -46,6 +52,10 @@ function addTask(text){
     listTask.appendChild(listSection);
     listTask.appendChild(del);
 
-    taskList.appendChild(listTask)
+    if(isUrgent){
+        taskList.prepend(listTask);
+    }else{
+        taskList.appendChild(listTask)
+    }
 }
 

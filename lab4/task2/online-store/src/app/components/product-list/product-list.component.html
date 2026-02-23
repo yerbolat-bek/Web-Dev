@@ -1,18 +1,11 @@
-<div class="products_grid">
-  <div class="product_card" *ngFor="let product of products">
-    <a [href]="product.link" target="_blank">
-      <img [src]="product.image" alt="{{product.name}}">
-    </a>
-    <h3>{{ product.name }}</h3>
-    <p>{{ product.description }}</p>
-    <p><strong>{{ product.price | number }} KZT</strong></p>
-    <p class="rating">
-      <span *ngFor="let star of getStars(product.rating)">{{ star }}</span>
-      ({{ product.rating }})
-    </p>
-    <div class="share_buttons">
-      <button class = "whatsapp_share"(click)="shareWhatsApp(product.link)">WhatsApp</button>
-      <button class="telegram_share"(click)="shareTelegram(product.link, product.name)">Telegram</button>
-    </div>
-  </div>
+<div class="products_grid" *ngIf="products.length > 0; else noProducts">
+  <app-product-item
+    *ngFor="let product of products"
+    [product]="product"
+    (delete)="onDelete($event)">
+</app-product-item>
 </div>
+
+<ng-template #noProducts>
+  <p>No products in this category 😔</p>
+</ng-template>

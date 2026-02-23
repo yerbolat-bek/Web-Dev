@@ -1,1 +1,18 @@
-<router-outlet></router-outlet>
+<h1>Product Store</h1>
+
+<div class="categories">
+  <button
+    *ngFor="let category of categories"
+    [class.active]="category === selectedCategory"
+    (click)="selectCategory(category)">
+    {{ category.name }}
+  </button>
+</div>
+
+<p *ngIf="!selectedCategory">Please select a category 👆</p>
+
+<app-product-list
+  *ngIf="selectedCategory"
+  [products]="products"
+  (deleteProduct)="removeProduct($event)">
+</app-product-list>
