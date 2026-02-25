@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ProductListComponent } from './components/product-list/product-list.component';
-import { ProductService } from './services/product.service';
-import { Category } from './models/category.model';
-import { Product } from './models/product.model';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductService } from '../services/product.service';
+import { Category } from '../models/category.model';
+import { Product } from '../models/product.model';
 
 @Component({
   selector: 'app-root',
