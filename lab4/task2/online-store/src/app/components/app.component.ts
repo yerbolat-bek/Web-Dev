@@ -23,7 +23,12 @@ export class AppComponent {
 
   selectCategory(category: Category) {
     this.selectedCategory = category;
-    this.products = this.productService.getProductsByCategory(category.id);
+    
+    if(category.id === 5){
+      this.products = this.productService.getFavouriteCategory();
+    }else{
+      this.products = this.productService.getProductsByCategory(category.id);
+    }
   }
 
   removeProduct(productId: number) {

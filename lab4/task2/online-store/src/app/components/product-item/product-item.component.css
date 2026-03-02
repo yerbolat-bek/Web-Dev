@@ -95,6 +95,9 @@
 .like:hover{
     background-color: rgb(221, 210, 12);
 }
+.like_icon{
+    color:red;
+}
 
 @media (max-width: 900px) {
     .products_grid {

@@ -1,0 +1,28 @@
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s;
+}
+
+li:hover {
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+li span {
+  cursor: pointer;
+  font-weight: 500;
+}
+
+li span:hover {
+  color: #2563eb;
+}

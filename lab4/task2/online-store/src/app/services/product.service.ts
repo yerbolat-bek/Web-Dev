@@ -12,6 +12,7 @@ export class ProductService {
     { id: 2, name: 'Laptops' },
     { id: 3, name: 'Headphones' },
     { id: 4, name: 'Tablets' },
+    { id: 5, name: 'Favourite' },
   ];
 
   products: Product[] = [
@@ -330,9 +331,12 @@ export class ProductService {
   getProductsByCategory(categoryId: number): Product[] {
     return this.products.filter(p => p.categoryId === categoryId);
   }
+  getFavouriteCategory(): Product[] {
+    return this.products.filter(p => p.likes === 1);
+  }
 
   likeProduct(product: Product) {
-    product.likes++;
+    product.likes = product.likes === 0 ? 1:0;
   }
 
   deleteProduct(productId: number) {

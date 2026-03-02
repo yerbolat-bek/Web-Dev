@@ -1,0 +1,26 @@
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.savebtn{
+    margin: 3pt;
+}
+
+.backbtn{
+    margin: 3pt;
+}
+.photobtn{
+    margin: 3pt;
+}
+.inp{
+    margin-left: 5pt;
+}
