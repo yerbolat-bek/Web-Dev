@@ -13,8 +13,11 @@ p {
     margin-top: 50px; 
 }
 
+button{
+    margin: 5px;
+}
 .btn { 
-    padding: 10px 20px;
+    padding: 12px 17px;
     background: #007bff;
     color: white; 
     border-radius: 5px; 

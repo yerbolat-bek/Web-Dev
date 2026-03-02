@@ -26,3 +26,10 @@ li span {
 li span:hover {
   color: #2563eb;
 }
+
+.delbtn{
+    background-color:rgb(255, 101, 101);
+}
+.delbtn:hover{
+    background-color: rgb(208, 32, 32);
+}
