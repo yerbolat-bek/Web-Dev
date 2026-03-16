@@ -21,7 +21,7 @@ export class AlbumPhotosComponent implements OnInit {
     this.albumId = Number(this.route.snapshot.paramMap.get('id'));
     this.albumService.getAlbumPhotos(this.albumId).subscribe({
       next: (data) => {
-        this.photos = data.slice(0, 10);
+        this.photos = data.slice(0,10);
       }
     });
   }

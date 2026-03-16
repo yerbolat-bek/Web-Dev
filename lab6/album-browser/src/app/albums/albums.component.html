@@ -4,7 +4,7 @@
   <ul *ngIf="!loading && albums.length > 0">
     <li *ngFor="let album of albums">
       <span (click)="goToDetail(album.id)" class="album-title">{{ album.id }} - {{ album.title }}</span>
-      <button (click)="deleteAlbum(album.id)" class="delbtn">Delete</button>
+      <button (click)="deleteAlbum(album.id); $event.stopPropagation()">Delete</button>
     </li>
   </ul>
   <div *ngIf="!loading && albums.length === 0">No albums found.</div>

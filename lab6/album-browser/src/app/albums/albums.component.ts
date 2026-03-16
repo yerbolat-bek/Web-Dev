@@ -21,7 +21,7 @@ export class AlbumsComponent implements OnInit {
     this.loading = true;
     this.albumService.getAlbums().subscribe({
       next: (data) => {
-        this.albums = data.slice(0,20);
+        this.albums = data;
         this.loading = false;
       },
       error: () => { this.loading = false; }

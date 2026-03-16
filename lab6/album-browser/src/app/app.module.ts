@@ -13,6 +13,6 @@ import { AppComponent } from './app.component';
     RouterModule.forRoot(routes),
     AppComponent
   ],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule {}
