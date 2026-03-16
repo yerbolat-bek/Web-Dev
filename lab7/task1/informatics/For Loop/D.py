@@ -1,8 +1,8 @@
-x= int(input())
-d = int(input())
+x= input()
+d = input()
 cnt = 0
 
-for i in range(1 , )
+for i in range(len(x)):
     if x[i] == d:
-        cnt += 1
+        cnt+=1
 print(cnt)
