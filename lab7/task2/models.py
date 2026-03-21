@@ -14,7 +14,7 @@ class Product:
     def __str__(self):
         return f"{self.name} (${self.price})"
     
-
+    
 class Electronics(Product):
     def __init__(self, name, price, quantity, warranty):
         super().__init__(name, price, quantity)
