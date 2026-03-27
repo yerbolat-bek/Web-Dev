@@ -1,46 +1,20 @@
-from django.http import JsonResponse
+from rest_framework import viewsets
+from rest_framework.decorators import action
+from rest_framework.response import Response
 from .models import Category, Product
-from django.shortcuts import get_object_or_404
+from .serializers import CategorySerializer, ProductSerializer
 
-def product_list(request):
-    products = Product.objects.all()
-    data = [{
-        'id': p.id,
-        'name': p.name,
-        'price': p.price,
-        'description': p.description,
-        'count': p.count,
-        'is_active': p.is_active,
-        'category': p.category.name
-    }for p in products]
-    return JsonResponse(data, safe=False)
+class CategoryViewSet(viewsets.ModelViewSet):
+    queryset = Category.objects.all()
+    serializer_class = CategorySerializer
 
-def product_detail(request, id):
-    product = get_object_or_404(Product, id=id)
-    return JsonResponse({
-        'id': product.id,
-        'name': product.name,
-        'price': product.price,
-        'description': product.description,
-        'count': product.count,
-        'is_active': product.is_active
-    })
+    @action(detail=True, methods=['get'])
+    def products(self, request, pk=None):
+        category = self.get_object()
+        products = category.products.all()
+        serializer = ProductSerializer(products, many=True)
+        return Response(serializer.data)
 
-def category_list(request):
-    categories = Category.objects.all()
-    data = [{'id': c.id, 'name': c.name} for c in categories]
-    return JsonResponse(data, safe=False)
-
-def category_detail(request, id):
-    category = get_object_or_404(Category, id=id)
-    return JsonResponse({'id': category.id, 'name': category.name})
-
-def category_products(request, id):
-    category = get_object_or_404(Category, id=id)
-    products = category.products.all()
-    data = [{'id': p.id, 'name': p.name, 'price': p.price} for p in products]
-    return JsonResponse(data, safe=False)
-
-
-
-
+class ProductViewSet(viewsets.ModelViewSet):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer
