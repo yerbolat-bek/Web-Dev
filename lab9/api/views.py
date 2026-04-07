@@ -1,4 +1,4 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, status
 from rest_framework.decorators import action
 from rest_framework.response import Response
 from .models import Category, Product
@@ -18,3 +18,9 @@ class CategoryViewSet(viewsets.ModelViewSet):
 class ProductViewSet(viewsets.ModelViewSet):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+
+    def partial_update(self, request, *args, **kwargs,):
+        return Response(
+            {"detail": "PUT: unable partial update for products"}, 
+            status = status.HTTP_405_METHOD_NOT_ALLOWED
+        )
